@@ -5,5 +5,5 @@
 
 * 001Vscode-Github
 1）Vscode入门教程
-2）git版本控制软件
-3）通过Vscode管理Github代码
+2）git版本控制软件及常用命令
+3）通过Vscode快捷管理Github代码
