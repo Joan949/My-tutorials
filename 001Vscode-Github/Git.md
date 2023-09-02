@@ -1,8 +1,4 @@
-## 1. 两者的区别
-1) git：版本控制软件；
-2) github：开源网站
-
-## 2. git客户端设置
+## 1. git客户端设置
 1）安装git
 安装完成后, 按下 Win 键, 输入 cmd, 回车，在命令行终端输入 git --version 命令，如果能够显示Git的版本号，则说明Git客户端已经成功安装.
 
@@ -23,7 +19,7 @@ git config --list
 ```
 
 
-## 3. 常见的git命令
+## 2. 常见的git命令
 在我们进行任何的git操作之前，我们都得先切换到 Git 的仓库目录，点击鼠标右键，再选择Git Bash Here，即可打开 Git Bash 的命令行窗口.
 
 1) 查看仓库状态
@@ -98,7 +94,7 @@ git tag v1.0
 #通过命令git checkout v1.0即可切换到该标签下的代码状态
 ```
 
-## 4.利用 SSH 完成 Git 与 GitHub 的绑定
+## 3.利用 SSH 完成 Git 与 GitHub 的绑定
 通过 Git 向 GitHub 提交代码时，不用反复验证账户信息
 ==1）在 Git Bash 中输入ssh命令，查看本机是否安装 SSH==
 ==2）指定 RSA 算法生成密钥，ssh-keygen -t rsa命令==
@@ -114,7 +110,7 @@ git tag v1.0
 ==4）验证绑定是否成功
 在 Git Bash 中输入ssh -T git@github.com进行测试：
 
-## 5. 通过 git 将代码提交到 GitHub
+## 4. 通过 git 将代码提交到 GitHub
 1）进入该仓库，git init 初始化操作
 2）存至暂存区，git add .
 3）提交到本地仓库
@@ -144,41 +140,6 @@ git pull origin main
 ```
 git push origin main
 ```
-
-## 6. 通过 git 实现VsCode版本控制
-2）初始化--VsCode
-![](images/2023-09-01-20-55-21.png)
-
-3）版本保存--VsCode
-![](images/2023-09-01-20-51-27.png)
-
-
-## 7.克隆 github 项目到本地
-1）新建存储文件夹GitRepo
-2）获取地址链接
-找到所需克隆的项目，点击Clone or download，复制地址链接
-![](images/2023-09-02-09-20-14.png)
-2）从存储文件夹目录进入 Git Bash
-3）开始克隆，git clone 后为刚复制的链接地址
-```
-git clone https://github.com/guobinhit/mybatis-tutorial.git 
-```
-
-## 8.github仓库管理
-1）仓库内新建文件夹：name+\
-2）仓库内删除文件夹
-github上只能删除仓库无法删除文件或文件夹
-只能通过命令来解决：
-```python
-git pull origin master  # 将远程仓库里面的项目拉下来
- dir  # 查看有哪些文件夹
- git rm -r --cached picture  # 删除picture文件夹
- git commit -m "删除了picture文件夹"  # 提交,添加操作说明
- git push origin master  # 将本次更改更新到github项目上去
-```
-3）删除仓库
-打开仓库主页面，点击设置，下滑至底部
-![](images/2023-09-02-11-03-25.png)
 
 
 
