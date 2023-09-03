@@ -77,3 +77,22 @@ conda install deepforest
 ```
 conda config --remove-key channels
 ```
+
+
+## 5.更新Anoconda
+```
+#升级conda为最新版本
+conda update conda
+
+#升级Anaconda为最新版本
+conda update anaconda
+
+#升级所有安装包
+conda update --all
+```
+
+## 6.常见报错
+1）ProxyError:
+>Conda cannot proceed due to an error in your proxy configuration.Check for typos and other configuration errors in any '.netrc' file in your home directory,any environment variables ending in '_PROXY', and any other system-wide proxy configuration settings.
+
+**解决方案**：在Internet中打开“Internet选项”——>连接——>局域网设置——>把“为LAN使用代理服务器”的勾去掉

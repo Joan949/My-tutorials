@@ -85,3 +85,9 @@ Ctrl-/: 评论 注释
 Ctrl-D: 删除整行
 Ctrl-U: 撤销选择
 ```
+## 4.常见报错
+1）jupyter notebook启动出错:
+>Bad config encountered during initialization:/ No such notebook dir:
+
+**解决方案：**
+重新修改文件默认存储路径即可
