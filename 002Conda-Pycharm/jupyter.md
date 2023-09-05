@@ -27,46 +27,36 @@ C:\Users\HS\.jupyter\jupyter_notebook_config.py
 
 ## 2.jupter的四种模式
 1）编辑模式--绿色--enter键
-2）命令模式--灰色--esc键 
+2）命令模式--蓝色--esc键 
+
 3）markdown模式:esc+m
 4）code模式:esc+y
 
 
 ## 3.常用快捷键
+
 1）命令模式下
 ```
-Enter: 进入编辑模式
-Y: 把代码块变成代码
-M: 把代码块变成标签
-
 A: 在上面插入代码块
 B: 在下面插入代码块
 D,D: 删除选中单元 按两下
-
 X: 剪切选择的代码块
 C: 复制选择的代码块
-
-Shift-V: 粘贴到上面
 V: 粘贴到下面
-Z: 撤销删除
 
-空格: 向下滚动
-Shift-空格: 向上滚动
 
 上: 选择上面的代码块
 下: 选择下面的代码块
 
-Shift-L: 在所有单元格中切换行号，并保持设置
 
-Shift-Enter: 运行代码块, 选择下面的代码块
 Ctrl-Enter: 运行选中的代码块
-Alt-Enter: 运行代码块并且插入下面
+Shift-Enter: 运行选中代码块,并跳转下一行
+Alt-Enter:运行选中代码块，并插入新的一行
+
 ```
 
 2）编辑模式下
 ```
-Esc: 进入命令行模式
-
 Ctrl-D: 删除整行
 
 Ctrl-上: 跳到单元格起始处
@@ -85,7 +75,44 @@ Ctrl-/: 评论 注释
 Ctrl-D: 删除整行
 Ctrl-U: 撤销选择
 ```
-## 4.常见报错
+
+## 4.魔法函数
+使用魔法函数可以简单的实现一些单纯python要很麻烦才能实现的功能
+```
+%：行魔法函数，只对本行代码生效。
+
+%%：Cell魔法函数，在整个Cell中生效，必须放于Cell首行。
+
+%lsmagic：列出所有的魔法函数
+
+%magic查看各个魔法函数的说明
+
+```
+
+## 5.使用技巧
+1）使用分号可以阻止该行函数的结果输出
+2）库、方法或变量前加上 ?获得快速语法说明
+3）按tab键查看提示信息或者补全命令
+
+4）解除cell只会显示最后一个输出结果的限制
+```python
+#法1：使用print()命令
+
+#法2：通过ipython包
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+```
+5）显示单元格行号
+esc--进入命令模式，Shift+L
+
+6）添加引号
+选中引用文字，按’或”即可
+
+7）复制/粘贴若干个cell
+Ctrl+shift 选中，ctrl+c,ctrl+v
+
+
+## 6.常见报错
 1）jupyter notebook启动出错:
 >Bad config encountered during initialization:/ No such notebook dir:
 
